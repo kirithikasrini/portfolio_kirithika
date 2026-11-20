@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F2EFEA;
+    color: #2E3440;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  ::selection {
+    background-color: #B9572F;
+    color: #FFFFFF;
+  }
+}
+
+@layer components {
+  /* STRICT BUTTON DESIGN RULES */
+  .btn-primary {
+    background-color: #B9572F;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .btn-primary:hover {
+    background-color: #9E4623;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(185, 87, 47, 0.2);
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    color: #2E3440;
+    border: 1px solid #A9A39A;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .btn-secondary:hover {
+    border-color: #B9572F;
+    color: #B9572F;
+    transform: translateY(-1px);
+    background-color: #FAF8F5;
+  }
+
+  /* EDITORIAL CARD USING CHALK & STONE */
+  .editorial-card {
+    background-color: #FAF8F5;
+    border: 1px solid #D8D4CC;
+    border-radius: 1rem;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .editorial-card:hover {
+    border-color: rgba(185, 87, 47, 0.4);
+    box-shadow: 0 12px 28px -8px rgba(46, 52, 64, 0.08);
+  }
+}
