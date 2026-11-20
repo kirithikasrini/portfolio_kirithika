@@ -80,6 +80,17 @@ export default function Projects() {
                 <Github className="w-4 h-4" />
                 <span>GitHub Repository</span>
               </a>
+              {project.livedemo && (
+              <a
+                href={project.livedemo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary px-4 py-2 text-xs sm:text-sm"
+              >
+                <Github className="w-4 h-4" />
+                <span>Live Demo</span>
+              </a>
+              )}
 
               {project.publicationUrl && (
                 <a

@@ -67,8 +67,8 @@ export const portfolioData = {
       tools: ["Computer Vision", "TFlite", "Image Processing"],
       category: "Computer Vision + TFlite",
       bullets: [
-        "Applied computer vision to automate herbal plant species identification, and medicinal research.",
-        "Implemented real - time plant identification pipeline using image processing and prediction confidence scores."
+        "Built a real-time herbal plant identification system using computer vision and image processing to support medicinal research.",
+        "Trained on 30 plant species from leaf images and achieved 89% accuracy, with prediction confidence scores shown for each result."
       ],
       githubUrl: "https://github.com/kirithikasrini/herbal_plant-detection",
       publicationUrl: "https://doi.org/10.1007/978-3-032-13029-7_3",
@@ -78,12 +78,25 @@ export const portfolioData = {
       id: "hostel-mgmt",
       title: "Hostel Management Web Application – Sri Sairam Engineering College",
       tools: ["React", "REST API", "Tailwind CSS"],
-      category: "React & REST API",
+      category: "React & REST API (Team Project)",
       bullets: [
+        
         "Automated hostel operations and reduced paperworks by enabling digital management of students records, rooms allocation and attendance tracking.",
         "Enabled centralized access for wardens and students with role-based workflows."
       ],
-      githubUrl: "https://github.com/sairams-hostel/hostel_management-client"
+      githubUrl: "https://github.com/sairams-hostel/hostel_management-client",
+      livedemo: "https://hostel-management-client.vercel.app/"
+    },
+    {
+      id: "financial-report",
+      title: "Explainable Fraud Detection Using Financial Data and MD&A Text",
+      tools: ["Python", "Machine Learning", "NLP", "TF-IDF", "XGBoost", "LightGBM", "MLP", "SHAP"],
+      category: "Machine Learning & NLP",
+      bullets: [
+        "Developed an explainable machine-learning framework to identify potential fraudulent financial reporting by analysing structured financial data and MD&A text from SEC 10-K reports.",
+        "Implemented financial-only, text-only and hybrid models, with SHAP-based feature importance and prediction explanations."
+      ],
+      githubUrl: "https://github.com/kirithikasrini/financial-fraud-detection.git"
     },
     {
       id: "walmart-sales",
@@ -91,10 +104,10 @@ export const portfolioData = {
       tools: ["Pandas", "Matplotlib", "Seaborn"],
       category: "Data Analysis",
       bullets: [
-        "Analysis Walmart’s sales data to uncover trends and patterns in product performance across regions.",
-        "Provided actionable insights to inform business strategies and inventory management."
+       " Built an end-to-end sales analysis in Python and SQL: cleaned the data, loaded it into MySQL and PostgreSQL, and queried revenue trends, top products, peak sales periods, and profit margins by branch and category.",
+         "Visualized the findings with Matplotlib and Seaborn to support pricing and inventory decisions."
       ],
-      githubUrl: "https://github.com/kirithikasrini"
+      githubUrl: "https://github.com/kirithikasrini/Walmart_Data-Analysis"
     },
     {
       id: "customer-churn",
@@ -102,9 +115,22 @@ export const portfolioData = {
       tools: ["Python", "Pandas", "Scikit-learn", "Streamlit", "Plotly"],
       category: "Machine Learning & Streamlit",
       bullets: [
-        "Developed an end-to-end customer churn prediction system by performing data preprocessing, feature engineering, exploratory data analysis, and machine learning model development."
+        "Built and deployed a churn prediction system on 7,032 Telco customer records. Logistic Regression was the best of three models tested, at 80.24% accuracy and 0.837 ROC AUC.",
+        "The Streamlit dashboard provides real-time risk scores, explainable churn drivers, retention recommendations, and revenue-at-risk estimates."
       ],
       githubUrl: "https://github.com/kirithikasrini/Customer_Churn"
+    },
+    {
+      id: "delivery-system",
+      title: "Last-Mile Delivery & Driver Tracking System",
+      tools: ["Vue.js", "Spring Boot", "Kotlin" , "MySQL"],
+      category: "Full-Stack developement (Team Project)",
+      bullets: [
+        "Built a last-mile delivery platform with a dispatcher web dashboard and an Android driver app. Dispatchers assign routes and monitor deliveries, while drivers get real-time GPS tracking, proof of delivery, and failed-delivery handling.",
+        "This team project won Overall Winner at Virtusa’s Excelathon 2.0 hackathon."
+       
+      ],
+      githubUrl: "https://github.com/SaiCharanUvaraj/Delivery-Web-Dashboard"
     }
   ],
 
@@ -122,18 +148,7 @@ export const portfolioData = {
       honor: "Overall Winner | Logistics & Transportation Domain | Virtusa",
       date: "June 2026",
       bullets: [
-        "Led the development of a complete Last-Mile Delivery & Driver Tracking System featuring a dispatcher dashboard and Android driver application.",
-        "Implemented real-time GPS tracking, route assignment, proof of delivery, and failed-delivery management using Spring Boot, Vue.js, Kotlin, and MySQL.",
-        "Delivered and deployed a scalable solution that addressed real-world logistics challenges, earning the Overall Winner award."
-      ]
-    },
-    {
-      title: "NCAAIET ’24 – Best paper award",
-      honor: "National Conference on Advancement in Artificial Intelligent and Emerging Trends, Sri Sairam Engineering College",
-      date: "Sept 2024",
-      bullets: [
-        "Presented a paper on an AI-based medicinal plant identification app using machine learning for accurate species detection.",
-        "Recognized for promoting AI in sustainable healthcare and pharmaceutical research."
+        "Won Overall Winner in the Logistics & Transportation domain for a Last-Mile Delivery & Driver Tracking System with a dispatcher dashboard and Android driver app."
       ]
     },
     {
@@ -145,6 +160,14 @@ export const portfolioData = {
         "Designed an AI-powered solution for medicinal plant identification to support AYUSH practices, promote biodiversity conservation, and enable accessible community healthcare through accurate plant recognition."
       ]
     },
+     {
+      title: "NPTEL Domain Based – Data Science (CSE) – Certificate",
+      honor: "SWAYAM / NPTEL",
+      date: "Jan -June 2026",
+      bullets: [
+        "Earned the NPTEL Domain Certificate in Data Science by successfully completing the required set of NPTEL courses in Data Science with qualifying performance."
+      ]
+    },
     {
       title: "NPTEL Motivated Learner + Discipline Star (CSE) - Certificate",
       honor: "SWAYAM / NPTEL",
@@ -154,13 +177,15 @@ export const portfolioData = {
       ]
     },
     {
-      title: "NPTEL Domain Based – Data Science (CSE) – Certificate",
-      honor: "SWAYAM / NPTEL",
-      date: "Jan -June 2026",
+      title: "NCAAIET ’24 – Best paper award",
+      honor: "National Conference on Advancement in Artificial Intelligent and Emerging Trends, Sri Sairam Engineering College",
+      date: "Sept 2024",
       bullets: [
-        "Earned the NPTEL Domain Certificate in Data Science by successfully completing the required set of NPTEL courses in Data Science with qualifying performance."
+        "Presented a paper on an AI-based medicinal plant identification app using machine learning for accurate species detection.",
+        "Recognized for promoting AI in sustainable healthcare and pharmaceutical research."
       ]
-    }
+    },
+   
   ],
 
   publications: [

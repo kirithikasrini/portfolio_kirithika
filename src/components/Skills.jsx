@@ -85,10 +85,7 @@ export default function Skills() {
                 </div>
               </div>
 
-              <div className="pt-6 mt-6 border-t border-[#D8D4CC] flex items-center justify-between text-[11px] font-mono text-stone">
-                <span>VERIFIED SKILL</span>
-                <span className="text-terracotta font-semibold">RESUME LISTED</span>
-              </div>
+              
             </motion.div>
           );
         })}
